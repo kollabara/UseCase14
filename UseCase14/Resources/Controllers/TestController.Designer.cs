@@ -21,14 +21,14 @@ namespace UseCase14.Resources.Controllers {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class TestController_ua_UA {
+    internal class TestController {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal TestController_ua_UA() {
+        internal TestController() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace UseCase14.Resources.Controllers {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UseCase14.Resources.Controllers.TestController.ua-UA", typeof(TestController_ua_UA).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UseCase14.Resources.Controllers.TestController", typeof(TestController).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -56,6 +56,42 @@ namespace UseCase14.Resources.Controllers {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MM/dd/yyyy.
+        /// </summary>
+        internal static string DateTime {
+            get {
+                return ResourceManager.GetString("DateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MM/dd/yyyy HH:mm.
+        /// </summary>
+        internal static string DateTime_B {
+            get {
+                return ResourceManager.GetString("DateTime_B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MM/dd/yyyy h:mm tt.
+        /// </summary>
+        internal static string DateTime_C {
+            get {
+                return ResourceManager.GetString("DateTime_C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT.
+        /// </summary>
+        internal static string DateTime_D {
+            get {
+                return ResourceManager.GetString("DateTime_D", resourceCulture);
             }
         }
     }

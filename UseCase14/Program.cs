@@ -1,8 +1,15 @@
+using UseCase14;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews().AddViewLocalization();
-builder.Services.AddLocalization(x => x.ResourcesPath = "");
+builder.Services.AddControllersWithViews().AddViewLocalization(x => x.ResourcesPath = "Resources");
+builder.Services.AddLocalization(x => x.ResourcesPath = "Resources");
+
+builder.Services.Configure<RouteOptions>(options =>
+{
+    options.ConstraintMap.Add("locale", typeof(LocaleRouteConstraint));
+});
 
 var app = builder.Build();
 

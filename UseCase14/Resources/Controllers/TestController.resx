@@ -18,4 +18,19 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="DateTime" xml:space="preserve">
+        <value>MM/dd/yyyy</value>
+    </data>
+    <data name="Number" xml:space="preserve">
+        <value>C2</value>
+    </data>
+    <data name="Length" xml:space="preserve">
+        <value>cm</value>
+    </data>
+    <data name="Weight" xml:space="preserve">
+        <value>kg</value>
+    </data>
+    <data name="Fluid" xml:space="preserve">
+        <value>liters</value>
+    </data>
 </root>
